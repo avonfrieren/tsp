@@ -1,0 +1,10 @@
+# Theo Score Points — options du mod
+MODOPTIONS_TSP_TITLE=                Theo Score Points (TSP)
+MODOPTIONS_TSP_ENABLED=              Activé
+MODOPTIONS_TSP_NEARRADIUS=           Rayon proche
+MODOPTIONS_TSP_FARRADIUS=            Rayon lointain
+MODOPTIONS_TSP_BLEEDRATE=            Vitesse de perte
+MODOPTIONS_TSP_HUDMODE=              Affichage HUD
+MODOPTIONS_TSP_HUDMODE_HIDDEN=       Masqué
+MODOPTIONS_TSP_HUDMODE_TOTALONLY=    Total seul
+MODOPTIONS_TSP_HUDMODE_FULL=         Total + Room

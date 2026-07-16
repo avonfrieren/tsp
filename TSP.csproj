@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>TSP</AssemblyName>
+    <RootNamespace>Celeste.Mod.TSP</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <DebugType>portable</DebugType>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <CelestePrefix Condition="'$(CelestePrefix)' == ''">$(HOME)/.steam/steam/steamapps/common/Celeste</CelestePrefix>
+    <ModsDir>$(CelestePrefix)/Mods/TSP</ModsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Celeste">
+      <HintPath>$(CelestePrefix)/Celeste.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MMHOOK_Celeste">
+      <HintPath>$(CelestePrefix)/MMHOOK_Celeste.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FNA">
+      <HintPath>$(CelestePrefix)/FNA.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToMods" AfterTargets="Build">
+    <ItemGroup>
+      <ModFiles Include="$(TargetDir)$(AssemblyName).dll" />
+      <ModFiles Include="$(TargetDir)$(AssemblyName).pdb" />
+      <ModFiles Include="$(MSBuildProjectDirectory)/everest.yaml" />
+      <DialogFiles Include="$(MSBuildProjectDirectory)/Dialog/*.txt" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModFiles)" DestinationFolder="$(ModsDir)" />
+    <Copy SourceFiles="@(DialogFiles)" DestinationFolder="$(ModsDir)/Dialog" />
+  </Target>
+
+</Project>

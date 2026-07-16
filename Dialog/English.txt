@@ -1,0 +1,10 @@
+# Theo Score Points — mod options
+MODOPTIONS_TSP_TITLE=                Theo Score Points (TSP)
+MODOPTIONS_TSP_ENABLED=              Enabled
+MODOPTIONS_TSP_NEARRADIUS=           Near Radius
+MODOPTIONS_TSP_FARRADIUS=            Far Radius
+MODOPTIONS_TSP_BLEEDRATE=            Bleed Rate
+MODOPTIONS_TSP_HUDMODE=              HUD Display
+MODOPTIONS_TSP_HUDMODE_HIDDEN=       Hidden
+MODOPTIONS_TSP_HUDMODE_TOTALONLY=    Total Only
+MODOPTIONS_TSP_HUDMODE_FULL=         Total + Room

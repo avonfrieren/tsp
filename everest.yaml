@@ -1,0 +1,6 @@
+- Name: TSP
+  Version: 0.1.0
+  DLL: TSP.dll
+  Dependencies:
+    - Name: EverestCore
+      Version: 1.0.0

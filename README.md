@@ -1,4 +1,4 @@
-# TSP — Theo Score Points
+# Theo Score Points (tsp)
 
 [Everest](https://everestapi.github.io/) mod for [Celeste](https://www.celestegame.com/) that adds a scoring system rewarding you for keeping **Theo** close to Madeline.
 
